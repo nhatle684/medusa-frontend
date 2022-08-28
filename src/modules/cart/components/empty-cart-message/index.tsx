@@ -3,13 +3,13 @@ import UnderlineLink from "@modules/common/components/underline-link"
 const EmptyCartMessage = () => {
   return (
     <div className="bg-amber-100 px-8 py-24 flex flex-col justify-center items-center text-center">
-      <h1 className="text-2xl-semi">Your shopping bag is empty</h1>
+      <h1 className="text-2xl-semi">Giỏ hàng của bạn đang trống</h1>
       <p className="text-base-regular mt-4 mb-6 max-w-[32rem]">
-        You don&apos;t have anything in your bag. Let&apos;s change that, use
-        the link below to start browsing our products.
+        Bạn không có gì trong giỏ hàng cả. Hãy thay đổi nó bằng cách
+        sử dụng đường dẫn bên dưới để xem sản phẩm.
       </p>
       <div>
-        <UnderlineLink href="/store">Explore products</UnderlineLink>
+        <UnderlineLink href="/store">Khám phá sản phẩm</UnderlineLink>
       </div>
     </div>
   )

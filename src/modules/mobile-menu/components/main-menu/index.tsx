@@ -36,7 +36,7 @@ const MainMenu = () => {
           </button>
         </div>
         <div>
-          <h1 className="text-xl-semi uppercase">Acme</h1>
+          <h1 className="text-xl-semi uppercase"> Máy may Nghĩa</h1>
         </div>
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
@@ -67,8 +67,8 @@ const MainMenu = () => {
                     className="flex items-center justify-between w-full"
                     onClick={close}
                   >
-                    <span className="sr-only">Go to Store</span>
-                    <span>Store</span>
+                    <span className="sr-only">Tới cửa hàng</span>
+                    <img src="/logo.png"/>
                     <ChevronDown className="-rotate-90" />
                   </button>
                 </a>
@@ -85,7 +85,7 @@ const MainMenu = () => {
                           onClick={close}
                         >
                           <span className="sr-only">
-                            Go to {collection.title} collection
+                            Tới danh mục {collection.title}
                           </span>
                           <span>{collection.title}</span>
                           <ChevronDown className="-rotate-90" />
@@ -103,7 +103,7 @@ const MainMenu = () => {
           <div className="flex flex-col gap-y-8 text-small-regular">
             {!customer ? (
               <div className="flex flex-col gap-y-4">
-                <span className="text-gray-700 uppercase">Account</span>
+                <span className="text-gray-700 uppercase">Tài khoản</span>
                 <Link href={`/account/login`} passHref>
                   <a>
                     <button
@@ -111,7 +111,7 @@ const MainMenu = () => {
                       onClick={close}
                     >
                       <span className="sr-only">Go to sign in page</span>
-                      <span className="normal-case">Sign in</span>
+                      <span className="normal-case">Đăng nhập</span>
                       <ChevronDown className="-rotate-90" />
                     </button>
                   </a>
@@ -119,7 +119,7 @@ const MainMenu = () => {
               </div>
             ) : (
               <div className="flex flex-col gap-y-4">
-                <span className="text-gray-700 uppercase">Signed in as</span>
+                <span className="text-gray-700 uppercase">Đăng nhập như</span>
                 <Link href={`/account`} passHref>
                   <a>
                     <button
@@ -135,7 +135,7 @@ const MainMenu = () => {
               </div>
             )}
             <div className="flex flex-col gap-y-4">
-              <span className="text-gray-700 uppercase">Delivery</span>
+              <span className="text-gray-700 uppercase">Giao hàng</span>
               <button
                 className="flex items-center justify-between border-b border-gray-200 py-2"
                 onClick={setScreenCountry}
@@ -146,7 +146,7 @@ const MainMenu = () => {
                 <div className="flex items-center gap-x-2">
                   <ReactCountryFlag countryCode={countryCode || "us"} svg />
                   <span className="normal-case">
-                    Shipping to{" "}
+                    Giao tới{" "}
                     {countries?.find((c) => c.country === countryCode)?.label}
                   </span>
                 </div>

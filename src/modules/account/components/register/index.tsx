@@ -43,10 +43,9 @@ const Register = () => {
 
   return (
     <div className="max-w-sm flex flex-col items-center mt-12">
-      <h1 className="text-large-semi uppercase mb-6">Become a Acme Member</h1>
+      <h1 className="text-large-semi uppercase mb-6">Trở thành thành viên</h1>
       <p className="text-center text-base-regular text-gray-700 mb-4">
-        Create your Acme Member profile, and get access to an enhanced shopping
-        experience.
+        Tạo tài khoản của bạn để tăng trải nghiệm mua sắm của bạn.
       </p>
       <form className="w-full flex flex-col" onSubmit={onSubmit}>
         <div className="flex flex-col w-full gap-y-2">

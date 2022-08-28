@@ -8,7 +8,7 @@ type PaymentDetailsProps = {
 const PaymentDetails = ({ payments, paymentStatus }: PaymentDetailsProps) => {
   return (
     <div>
-      <h2 className="text-base-semi">Payment</h2>
+      <h2 className="text-base-semi">Phương thức thanh toán</h2>
       <div className="my-2">
         {payments.map((p) => {
           switch (p.provider_id) {
@@ -62,8 +62,7 @@ const StripeDetails = ({ payment }: { payment: Payment }) => {
 const TestDetails = () => {
   return (
     <div className="flex flex-col text-base-regular">
-      <span className="text-small-regular text-gray-700">Test</span>
-      <span>Test payment using medusa-payment-manual</span>
+      <span>Thanh toán khi nhận hàng</span>
     </div>
   )
 }

@@ -91,13 +91,13 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
   return (
     <div className="w-full bg-white flex flex-col">
       <div className="mb-4">
-        <h3 className="text-base-semi">Discount</h3>
+        <h3 className="text-base-semi">Giảm giá</h3>
       </div>
       <div className="text-small-regular">
         {appliedDiscount ? (
           <div className="flex items-center justify-between">
             <div>
-              <span>Code: </span>
+              <span>Mã giảm giá: </span>
               <span className="font-semibold">{appliedDiscount}</span>
             </div>
             <div>
@@ -107,7 +107,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
                 disabled={isLoading}
               >
                 <Trash size={16} />
-                <span className="sr-only">Remove gift card from order</span>
+                <span className="sr-only">Xóa khỏi giỏ hàng</span>
               </button>
             </div>
           </div>
@@ -123,11 +123,11 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
               />
               <div>
                 <Button
-                  className="!min-h-[0] h-[46px] w-[80px]"
+                  className="!min-h-[0] h-[46px] w-[100px]"
                   disabled={isLoading}
                   isLoading={isLoading}
                 >
-                  Apply
+                  Áp dụng
                 </Button>
               </div>
             </div>
